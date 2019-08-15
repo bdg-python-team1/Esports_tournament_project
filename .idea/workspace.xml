@@ -28,8 +28,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Esports/Esports/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="47" column="59" lean-forward="true" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
+            <state relative-caret-position="259">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Esports/Esports/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#631#663#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,6 +70,7 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Esports/tournament/templates/tournament/home.html" />
+        <option value="$PROJECT_DIR$/Esports/Esports/urls.py" />
         <option value="$PROJECT_DIR$/Esports/Esports/settings.py" />
       </list>
     </option>
@@ -96,6 +109,36 @@
               <item name="Esports_tournament_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Esports_tournament_project" type="462c0819:PsiDirectoryNode" />
               <item name="Esports" type="462c0819:PsiDirectoryNode" />
+              <item name="tournament" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esports_tournament_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esports_tournament_project" type="462c0819:PsiDirectoryNode" />
+              <item name="Esports" type="462c0819:PsiDirectoryNode" />
+              <item name="tournament" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esports_tournament_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esports_tournament_project" type="462c0819:PsiDirectoryNode" />
+              <item name="Esports" type="462c0819:PsiDirectoryNode" />
+              <item name="tournament" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="tournament" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esports_tournament_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esports_tournament_project" type="462c0819:PsiDirectoryNode" />
+              <item name="Esports" type="462c0819:PsiDirectoryNode" />
+              <item name="tournament" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="tournament" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esports_tournament_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esports_tournament_project" type="462c0819:PsiDirectoryNode" />
+              <item name="Esports" type="462c0819:PsiDirectoryNode" />
               <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -110,6 +153,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Liza\PycharmProjects\Esports_tournament_project\Esports\Esports\media" />
       <recent name="C:\Users\Liza\PycharmProjects\Esports_tournament_project\Esports\tournament\static\tournament\images" />
       <recent name="C:\Users\Liza\PycharmProjects\Esports_tournament_project\Esports\tournament\static\tournament" />
     </key>
@@ -165,13 +209,27 @@
       <option name="project" value="LOCAL" />
       <updated>1565863494796</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="created a new app named users for a user to login/register">
+      <created>1565864740983</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1565864740983</updated>
+    </task>
+    <task id="LOCAL-00006" summary="created a new app named users for a user to login/register">
+      <created>1565864986454</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1565864986454</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16592261" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16592261" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -182,7 +240,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.23895253" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.23895253" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -194,7 +252,8 @@
     <MESSAGE value="first change" />
     <MESSAGE value="django project added" />
     <MESSAGE value="added a static template and a jpg image" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a static template and a jpg image" />
+    <MESSAGE value="created a new app named users for a user to login/register" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a new app named users for a user to login/register" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -224,10 +283,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Esports/Esports/media/cat.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Esports/Esports/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#631#663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Esports/Esports/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="47" column="59" lean-forward="true" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
+        <state relative-caret-position="259">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
