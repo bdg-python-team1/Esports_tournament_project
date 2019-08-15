@@ -1,7 +1,5 @@
-{% extends "tournament/base.html" %}
-{% block content %}
+<!DOCTYPE html>
 {% load staticfiles %}
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,19 +8,9 @@
 <body>
  <h2>Home</h2>
      <div>
-         <p><img src="{% static 'tournament/images/png.png' %}"  height="350"/></p>
+
+         <p><img src="{% static 'tournament/images/265693.jpg' %}"  height="350"/></p>
      </div>
-<article class="media content-section">
-  <div class="media-body">
-    <div class="article-metadata">
-      <a class="mr-2" href="#">{{ post.author }}</a>
-      <small class="text-muted">{{ post.date_posted }}</small>
-    </div>
-    <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
-    <p class="article-content">{{ post.content }}</p>
-  </div>
-</article>
 </body>
 
 </html>
-{% endblock content %}
