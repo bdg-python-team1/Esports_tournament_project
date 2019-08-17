@@ -11,10 +11,10 @@ def home(request):
 def host(request):
     return render(request, 'tournament/host_a_tournament.html')
 
-def show_contest(request, category_name_slug):
+def show_contest(request, contest_name_slug):
     context_dict = {}
     try:
-        contest = Contest.objects.get(slug=category_name_slug)
+        contest = Contest.objects.get(slug=contest_name_slug)
         context_dict['contest'] = contest
     except Contest.DoesNotExist:
         context_dict['contest'] = None
