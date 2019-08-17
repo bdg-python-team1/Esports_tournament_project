@@ -1,0 +1,22 @@
+{% extends "tournament/base.html" %}
+{% block content %}
+{% load static %}
+ <h2>Home</h2>
+     <div>
+     {% if tournaments %}
+         <ul>
+         {% for tournament in tournaments %}
+             <li>
+             <a href="/tournaments/tournament/{{ tournament.slug }}/">{{ tournament.name }}</a>
+            </li>
+        {% endfor %}
+         </ul>
+     {% else %}
+        <strong>There are no tournaments present.</strong>
+     {% endif %}
+     </div>
+     <div>
+        <p><img src="{% static 'tournament/images/png.png' %}"  height="350"/></p>
+     </div>
+{% endblock content %}
+

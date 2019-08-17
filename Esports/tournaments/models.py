@@ -2,8 +2,8 @@ from django.db import models
 from django.template.defaultfilters import slugify
 
 class Tournament(models.Model):
-    name = models.CharField(max_length=250)
-    slug = models.SlugField()
+    name = models.CharField(max_length=250, unique=True)
+    slug = models.SlugField(unique=True)
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
@@ -11,11 +11,3 @@ class Tournament(models.Model):
 
     def __str__(self):
         return self.name
-
-
-
-
-
-
-
-# Create your models here.

@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'tournament.apps.TournamentConfig',
+    'tournaments.apps.TournamentConfig',
     'users.apps.UsersConfig',
     'django.contrib.admin',
     'django.contrib.auth',
