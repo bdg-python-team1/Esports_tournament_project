@@ -3,7 +3,16 @@
 {% load static %}
  <h2>Home</h2>
      <div>
-         <p><img src="{% static 'tournament/images/png.png' %}"  height="350"/></p>
+     {% if tournaments %}
+         <ul>
+         {% for tournament in tournaments %}
+            <li>{{ tournament.name }}</li>
+        {% endfor %}
+         </ul>
+         {% else %}
+        <strong>There are no tournaments present.</strong>
+    {% endif %}
+        <p><img src="{% static 'tournament/images/png.png' %}"  height="350"/></p>
     </div>
 {% endblock content %}
 
