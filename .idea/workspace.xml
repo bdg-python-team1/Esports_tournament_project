@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9736bc26-caf5-40a2-87b2-39a377ec1db1" name="Default Changelist" comment="test">
+    <list default="true" id="9736bc26-caf5-40a2-87b2-39a377ec1db1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/Esports/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/Esports/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/static/tournament/images/clc.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Esports/tournament/templates/tournament/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournament/templates/tournament/home.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/Esports/Esports/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="561">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -39,7 +37,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Esports/tournament/templates/tournament/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="-102">
               <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
             </state>
           </provider>
@@ -48,8 +46,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Esports/tournament/templates/tournament/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="17">
+              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/django-project/Esports4/Esports/tournaments/templates/tournaments/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="1" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -86,16 +93,15 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Esports/tournament/test/text.html" />
-        <option value="$PROJECT_DIR$/Esports/tournament/templates/tournament/home.html" />
         <option value="$PROJECT_DIR$/Esports/Esports/settings.py" />
+        <option value="$PROJECT_DIR$/Esports/tournament/templates/tournament/home.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="26" />
-    <option name="y" value="95" />
-    <option name="width" value="1026" />
-    <option name="height" value="546" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1966" />
+    <option name="width" value="1884" />
+    <option name="height" value="2090" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -135,6 +141,30 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="tournament" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Esports_tournament_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esports_tournament_project" type="462c0819:PsiDirectoryNode" />
+              <item name="Esports" type="462c0819:PsiDirectoryNode" />
+              <item name="tournament" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="tournament" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esports_tournament_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esports_tournament_project" type="462c0819:PsiDirectoryNode" />
+              <item name="Esports" type="462c0819:PsiDirectoryNode" />
+              <item name="tournament" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esports_tournament_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esports_tournament_project" type="462c0819:PsiDirectoryNode" />
+              <item name="Esports" type="462c0819:PsiDirectoryNode" />
+              <item name="tournament" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="tournament" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -145,7 +175,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Esports/tournament/static/tournament/images" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/django-project/Esports" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -239,11 +269,19 @@
       <option name="project" value="LOCAL" />
       <updated>1565867534107</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="a">
+      <created>1565873034243</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1565873034243</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="980" y="0" width="942" height="1045" extended-state="0" />
+    <frame x="983" y="0" width="942" height="1045" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24118942" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -256,8 +294,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49702382" weight="0.22094926" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4985119" visible="true" weight="0.23895253" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50440526" side_tool="true" visible="true" weight="0.22052401" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4900881" visible="true" weight="0.23799127" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5099119" side_tool="true" weight="0.23799127" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -270,7 +308,8 @@
     <MESSAGE value="added a static template and a jpg image" />
     <MESSAGE value="Merge branch 'master' of https://github.com/bdg-python-team1/Esports_tournament_project&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Esports/users/apps.py" />
@@ -309,14 +348,7 @@
     <entry file="file://$PROJECT_DIR$/Esports/Esports/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Esports/tournament/templates/tournament/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
@@ -326,9 +358,23 @@
     <entry file="file://$PROJECT_DIR$/Esports/tournament/forms.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/django-project/Esports4/Esports/tournaments/templates/tournaments/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Esports/tournament/templates/tournament/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Esports/tournament/templates/tournament/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="-102">
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>

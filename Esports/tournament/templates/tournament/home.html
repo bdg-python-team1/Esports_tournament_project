@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-{% load staticfiles %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-</head>
-<body>
+{% extends "tournament/base.html" %}
+{% block content %}
+{% load static %}
  <h2>Home</h2>
      <div>
-
-         <p><img src="{% static 'tournament/images/265693.jpg' %}"  height="350"/></p>
-     </div>
-</body>
-
-</html>
+         <p><img src="{% static 'tournament/images/png.png' %}"  height="350"/></p>
+    </div>
+{% endblock content %}
