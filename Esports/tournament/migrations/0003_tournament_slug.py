@@ -6,12 +6,12 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('tournaments', '0002_remove_tournament_slug'),
+        ('tournament', '0002_remove_tournament_slug'),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='tournaments',
+            model_name='tournament',
             name='slug',
             field=models.SlugField(default=''),
             preserve_default=False,

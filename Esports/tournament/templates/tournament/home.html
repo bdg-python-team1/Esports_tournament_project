@@ -6,13 +6,17 @@
      {% if tournaments %}
          <ul>
          {% for tournament in tournaments %}
-            <li>{{ tournament.name }}</li>
+             <li>
+             <a href="/tournament/tournament/{{ tournament.slug }}/">{{ tournament.name }}</a>
+            </li>
         {% endfor %}
          </ul>
-         {% else %}
+     {% else %}
         <strong>There are no tournaments present.</strong>
-    {% endif %}
+     {% endif %}
+     </div>
+     <div>
         <p><img src="{% static 'tournament/images/png.png' %}"  height="350"/></p>
-    </div>
+     </div>
 {% endblock content %}
 
