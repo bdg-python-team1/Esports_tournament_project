@@ -3,16 +3,16 @@
 {% load static %}
  <h2>Home</h2>
      <div>
-     {% if tournaments %}
+     {% if contests %}
          <ul>
-         {% for tournament in tournaments %}
+         {% for contest in contests %}
              <li>
-             <a href="/tournament/tournament/{{ tournament.slug }}/">{{ tournament.name }}</a>
+             <a href="/tournament/contest/{{ contest.slug }}/">{{ contest.name }}</a>
             </li>
         {% endfor %}
          </ul>
      {% else %}
-        <strong>There are no tournaments present.</strong>
+        <strong>There are no contests present.</strong>
      {% endif %}
      </div>
      <div>

@@ -2,30 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9736bc26-caf5-40a2-87b2-39a377ec1db1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Esports/tournaments/templates/tournament/tour.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/Esports/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/Esports/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/Esports/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/Esports/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Esports/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournaments/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournaments/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournaments/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournaments/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournaments/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/migrations/0002_remove_tournament_slug.py" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournaments/migrations/0002_remove_tournament_slug.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/migrations/0003_tournament_slug.py" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournaments/migrations/0003_tournament_slug.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournaments/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournaments/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/static/tournament/images/cl.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournaments/static/tournament/images/cl.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/static/tournament/images/png.png" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournaments/static/tournament/images/png.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/static/tournament/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournaments/static/tournament/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/templates/tournament/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournaments/templates/tournament/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/templates/tournament/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournaments/templates/tournament/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/templates/tournament/host_a_tournament.html" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournaments/templates/tournament/host_a_tournament.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/templates/tournament/tour.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournaments/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournaments/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esports/tournament/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournaments/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esports/tournament/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournament/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esports/tournament/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournament/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esports/tournament/templates/tournament/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournament/templates/tournament/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esports/tournament/templates/tournament/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournament/templates/tournament/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esports/tournament/templates/tournament/host_a_tournament.html" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournament/templates/tournament/host_a_tournament.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esports/tournament/templates/tournament/tour.html" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournament/templates/tournament/tour.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esports/tournament/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournament/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esports/tournament/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Esports/tournament/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,28 +22,28 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Esports/tournaments/templates/tournament/home.html">
+        <entry file="file://$PROJECT_DIR$/Esports/tournament/templates/tournament/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+            <state relative-caret-position="170">
+              <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Esports/tournaments/templates/tournament/host_a_tournament.html">
+        <entry file="file://$PROJECT_DIR$/Esports/tournament/templates/tournament/host_a_tournament.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Esports/tournaments/views.py">
+        <entry file="file://$PROJECT_DIR$/Esports/tournament/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+            <state relative-caret-position="132">
+              <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -66,19 +52,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Esports/tournaments/templates/tournament/tour.html">
+        <entry file="file://$PROJECT_DIR$/Esports/tournament/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+            <state relative-caret-position="119">
+              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Esports/tournament/templates/tournament/tour.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Esports/tournaments/urls.py">
+        <entry file="file://$PROJECT_DIR$/Esports/tournament/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="102">
+              <caret line="6" column="85" selection-start-line="6" selection-start-column="85" selection-end-line="6" selection-end-column="85" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -86,7 +84,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Esports/users/models.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Esports/Esports/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="164">
@@ -99,38 +102,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Esports/tournaments/templates/tournament/base.html">
+        <entry file="file://$PROJECT_DIR$/Esports/tournament/templates/tournament/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-258">
-              <caret line="29" column="61" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+            <state relative-caret-position="219">
+              <caret line="29" column="81" selection-start-line="29" selection-start-column="81" selection-end-line="29" selection-end-column="81" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Esports/tournaments/models.py">
+        <entry file="file://$PROJECT_DIR$/Esports/tournament/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Esports/Esports/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Esports/tournaments/forms.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -157,19 +146,22 @@
         <option value="$PROJECT_DIR$/Esports/Esports/settings.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Esports/Esports/urls.py" />
-        <option value="$PROJECT_DIR$/Esports/tournament/admin.py" />
-        <option value="$PROJECT_DIR$/Esports/tournament/views.py" />
-        <option value="$PROJECT_DIR$/Esports/tournament/templates/tournament/home.html" />
-        <option value="$PROJECT_DIR$/Esports/tournament/models.py" />
-        <option value="$PROJECT_DIR$/Esports/tournament/templates/tournament/tour.html" />
-        <option value="$PROJECT_DIR$/Esports/tournament/urls.py" />
         <option value="$PROJECT_DIR$/Esports/tournaments/templates/tournament/home.html" />
+        <option value="$PROJECT_DIR$/Esports/tournaments/templates/tournaments/home.html" />
+        <option value="$PROJECT_DIR$/Esports/tournament/models.py" />
+        <option value="$PROJECT_DIR$/Esports/tournament/views.py" />
+        <option value="$PROJECT_DIR$/Esports/tournament/admin.py" />
+        <option value="$PROJECT_DIR$/Esports/tournament/urls.py" />
+        <option value="$PROJECT_DIR$/Esports/tournament/templates/tournament/base.html" />
+        <option value="$PROJECT_DIR$/Esports/tournament/templates/tournament/home.html" />
+        <option value="$PROJECT_DIR$/Esports/tournament/templates/tournament/host_a_tournament.html" />
+        <option value="$PROJECT_DIR$/Esports/tournament/templates/tournament/tour.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="594" />
-    <option name="y" value="201" />
+    <option name="x" value="90" />
+    <option name="y" value="164" />
     <option name="width" value="764" />
     <option name="height" value="546" />
   </component>
@@ -200,43 +192,29 @@
               <item name="Esports_tournament_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Esports_tournament_project" type="462c0819:PsiDirectoryNode" />
               <item name="Esports" type="462c0819:PsiDirectoryNode" />
-              <item name="tournaments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Esports_tournament_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Esports_tournament_project" type="462c0819:PsiDirectoryNode" />
-              <item name="Esports" type="462c0819:PsiDirectoryNode" />
-              <item name="tournaments" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Esports_tournament_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Esports_tournament_project" type="462c0819:PsiDirectoryNode" />
-              <item name="Esports" type="462c0819:PsiDirectoryNode" />
-              <item name="tournaments" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="tournament" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Esports_tournament_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Esports_tournament_project" type="462c0819:PsiDirectoryNode" />
               <item name="Esports" type="462c0819:PsiDirectoryNode" />
-              <item name="tournaments" type="462c0819:PsiDirectoryNode" />
+              <item name="tournament" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esports_tournament_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esports_tournament_project" type="462c0819:PsiDirectoryNode" />
+              <item name="Esports" type="462c0819:PsiDirectoryNode" />
+              <item name="tournament" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Esports_tournament_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Esports_tournament_project" type="462c0819:PsiDirectoryNode" />
               <item name="Esports" type="462c0819:PsiDirectoryNode" />
-              <item name="tournaments" type="462c0819:PsiDirectoryNode" />
+              <item name="tournament" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="tournament" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Esports_tournament_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Esports_tournament_project" type="462c0819:PsiDirectoryNode" />
-              <item name="Esports" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -356,14 +334,27 @@
       <option name="project" value="LOCAL" />
       <updated>1566057822818</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Tournament model added">
+      <created>1566062365360</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1566062365360</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Tournament model added">
+      <created>1566062652596</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1566062652596</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13095239" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19642857" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -374,7 +365,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49702382" weight="0.22094926" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4985119" visible="true" weight="0.34697217" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4985119" visible="true" weight="0.2831424" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50440526" side_tool="true" weight="0.22052401" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -395,10 +386,10 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Esports/tournament/test/text.html" />
     <entry file="file://$PROJECT_DIR$/Esports/tournament/static/tournament/images/clc.jpg" />
-    <entry file="file://$PROJECT_DIR$/Esports/tournaments/static/tournament/images/cl.jpg">
+    <entry file="file://$PROJECT_DIR$/Esports/tournament/static/tournament/images/cl.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Esports/tournaments/static/tournament/main.css">
+    <entry file="file://$PROJECT_DIR$/Esports/tournament/static/tournament/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
@@ -422,81 +413,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Esports/tournaments/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="30" lean-forward="true" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Esports/tournaments/forms.py">
+    <entry file="file://$PROJECT_DIR$/Esports/tournament/forms.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Esports/Esports/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Esports/tournaments/templates/tournament/host_a_tournament.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Esports/tournaments/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Esports/tournaments/templates/tournament/tour.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Esports/tournaments/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Esports/tournaments/templates/tournament/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Esports/tournaments/templates/tournament/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-258">
-          <caret line="29" column="61" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Esports/tournaments/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -507,6 +430,77 @@
           <folding>
             <element signature="e#631#663#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Esports/tournament/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Esports/tournament/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Esports/users/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Esports/tournament/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="85" selection-start-line="6" selection-start-column="85" selection-end-line="6" selection-end-column="85" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Esports/tournament/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Esports/tournament/templates/tournament/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="29" column="81" selection-start-line="29" selection-start-column="81" selection-end-line="29" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Esports/tournament/templates/tournament/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Esports/tournament/templates/tournament/host_a_tournament.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Esports/tournament/templates/tournament/tour.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
         </state>
       </provider>
     </entry>

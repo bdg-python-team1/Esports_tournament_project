@@ -2,8 +2,8 @@
 {% block content %}
 {% load static %}
     <div>
-    {% if tournament %}
-        <h1>{{ tournament.name }}</h1>
+    {% if contest %}
+        <h1>{{ contest.name }}</h1>
         {% if players %}
         <ul>
             {% for player in players %}
@@ -14,7 +14,7 @@
         <strong>No players currently in this tournament.</strong>
         {% endif %}
     {% else %}
-            The specified tournament does not exist!
+            The specified contest does not exist!
     {% endif %}
     </div>
 {% endblock content %}

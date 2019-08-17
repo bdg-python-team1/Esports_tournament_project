@@ -1,22 +1,22 @@
 from django.shortcuts import render
-from . models import Tournament
+from . models import Contest
 
 def home(request):
-    tournament_list = Tournament.objects.all()
+    contest_list = Contest.objects.all()
     context_dict = {}
-    context_dict['tournament'] = tournament_list
+    context_dict['contest'] = contest_list
     return render(request, 'tournament/home.html', context_dict)
 
 
 def host(request):
     return render(request, 'tournament/host_a_tournament.html')
 
-def show_tournament(request, category_name_slug):
+def show_contest(request, category_name_slug):
     context_dict = {}
     try:
-        tournament = Tournament.objects.get(slug=category_name_slug)
-        context_dict['tournament'] = tournament
-    except Tournament.DoesNotExist:
-        context_dict['tournament'] = None
+        contest = Contest.objects.get(slug=category_name_slug)
+        context_dict['contest'] = contest
+    except Contest.DoesNotExist:
+        context_dict['contest'] = None
 
     return render(request, 'tournament/tour.html', context_dict)
