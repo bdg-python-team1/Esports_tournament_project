@@ -4,11 +4,11 @@
  <h2>Home</h2>
      <div>
      {% if contests %}
-     <ul>
-         {% for contest in contests %}
-         <li><a href="/tournament/contest/{{ contest.slug }}/">{{ contest.name }}</a></li>
-         {% endfor %}
-     </ul>
+        <ul>
+            {% for contest in contests %}
+            <li><a href="/tournament/contest/{{ contest.slug }}/">{{ contest.name }}</a></li>
+            {% endfor %}
+        </ul>
      {% else %}
          <strong>There are no contests present.</strong>
      {% endif %}

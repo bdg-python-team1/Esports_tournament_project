@@ -4,7 +4,7 @@ from . models import Contest
 def home(request):
     contest_list = Contest.objects.all()
     context_dict = {}
-    context_dict['contest'] = contest_list
+    context_dict['contests'] = contest_list
     return render(request, 'tournament/home.html', context_dict)
 
 
@@ -19,4 +19,4 @@ def show_contest(request, contest_name_slug):
     except Contest.DoesNotExist:
         context_dict['contest'] = None
 
-    return render(request, 'tournament/tour.html', context_dict)
+    return render(request, 'tournament/contest.html', context_dict)
