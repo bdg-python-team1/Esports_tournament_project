@@ -9,7 +9,15 @@ def home(request):
 
 
 def host(request):
-    return render(request, 'tournament/host_a_tournament.html')
+    form = ContestForm()
+    if request.method == 'POST':
+        form = ContestForm(request.POST)
+        if form.is_valid():
+            form.save(commit=True)
+            return home(request)
+        else:
+            print(form.errors)
+    return render(request, 'tournament/add_contest.html', {'form': form})
 
 def show_contest(request, contest_name_slug):
     context_dict = {}
@@ -22,6 +30,7 @@ def show_contest(request, contest_name_slug):
     return render(request, 'tournament/contest.html', context_dict)
 
 def add_contest(request):
+    form = ContestForm()
     if request.method == 'POST':
         form = ContestForm(request.POST)
         if form.is_valid():
@@ -29,7 +38,6 @@ def add_contest(request):
             return home(request)
         else:
             print(form.errors)
-
 
     return render(request, 'tournament/add_contest.html', {'form': form})
 
