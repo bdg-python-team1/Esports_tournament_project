@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from . models import Contest
-
+from tournament.forms import ContestForm
 def home(request):
     contest_list = Contest.objects.all()
     context_dict = {}
@@ -20,3 +20,17 @@ def show_contest(request, contest_name_slug):
         context_dict['contest'] = None
 
     return render(request, 'tournament/contest.html', context_dict)
+
+def add_contest(request):
+    if request.method == 'POST':
+        form = ContestForm(request.POST)
+        if form.is_valid():
+            form.save(commit=True)
+            return home(request)
+        else:
+            print(form.errors)
+
+
+    return render(request, 'tournament/add_contest.html', {'form': form})
+
+
