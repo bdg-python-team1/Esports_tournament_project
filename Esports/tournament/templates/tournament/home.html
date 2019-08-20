@@ -1,7 +1,7 @@
 {% extends "tournament/base.html" %}
 {% block content %}
 {% load static %}
- <h2>Home</h2>
+
      <div>
      {% if contests %}
         <ul>
@@ -14,9 +14,8 @@
      {% endif %}
 
      </div>
+    <br>
      <div>
-
-         <ul><li><a href="/tournament/add_contest/">Add New Contest</a><br /></li></ul>
          <p><img src="{% static 'tournament/images/png.png' %}"  height="350"/></p>
      </div>
 {% endblock content %}

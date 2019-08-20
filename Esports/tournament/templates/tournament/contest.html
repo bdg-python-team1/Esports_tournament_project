@@ -1,20 +1,52 @@
 {% extends "tournament/base.html" %}
 {% block content %}
 {% load static %}
-    <div>
+
+
+<div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <small><form method="post">
+        {% csrf_token %}
+        <input type="text">
+        <button type="submit">Submit</button>
+    </form></small>
     {% if contest %}
         <h1>{{ contest.name }}</h1>
-        {% if players %}
-        <ul>
-            {% for player in players %}
-            <li><a href="">{{ player.name }}</a></li>
-            {% endfor %}
-        </ul>
-        {% else %}
-        <strong>No players currently in this tournament.</strong>
-        {% endif %}
-    {% else %}
-        The specified contest does not exist!
     {% endif %}
-    </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="{% static 'tournament/bracket.css' %}">
+
+<div class="tournament-container">
+  <div class="tournament-headers">
+    <h3>Quarter-Finals</h3>
+    <h3>Semi-Finals</h3>
+    <h3>Final</h3>
+    <h3>Winner</h3>
+  </div>
+
+  <div class="tournament-brackets">
+    <ul class="bracket bracket-2">
+      <li class="team-item">{{ contest.player1 }} <time>20:00</time> {{ contest.player2 }}</li>
+      <li class="team-item">{{ contest.player3 }} <time>20:00</time> {{ contest.player4 }}</li>
+      <li class="team-item">{{ contest.player5 }} <time>20:00</time> {{ contest.player6 }}</li>
+      <li class="team-item">{{ contest.player7 }} <time>20:00</time> {{ contest.player8 }}</li>
+    </ul>
+    <ul class="bracket bracket-3">
+      <li class="team-item">SF1 <time>20:00</time> SF2</li>
+      <li class="team-item">SF3 <time>20:00</time> SF4</li>
+    </ul>
+    <ul class="bracket bracket-4">
+      <li class="team-item">F1 <time>20:00</time> F2</li>
+    </ul>
+
+    <ul class="bracket bracket-5">
+      <li class="team-item">European Champions</li>
+    </ul>
+  </div>
+</div>
 {% endblock content %}
+
