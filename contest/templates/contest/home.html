@@ -1,0 +1,16 @@
+{% extends 'contest/base.html' %}
+{% block content %}
+    {% for tournament in tournaments %}
+    <article class="media content-section">
+        <img class="rounded-circle article-img" src="{{ tournament.host.profile.image.url }}">
+      <div class="media-body">
+        <div class="article-metadata">
+          <a class="mr-2" href="#">{{ tournament.host }}</a>
+          <small class="text-muted">{{ tournament.date_posted|date:"F d, Y" }}</small>
+        </div>
+        <h2><a class="article-title" href="{% url 'tournament-detail' tournament.id %}">{{ tournament.name }}</a></h2>
+        <p class="article-content">{{ tournament.player1 }} {{ tournament.score1 }}:{{ tournament.score2 }} {{ tournament.player2 }}</p>
+      </div>
+    </article>
+    {% endfor %}
+{% endblock content %}
