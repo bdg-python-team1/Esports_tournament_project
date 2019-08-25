@@ -5,7 +5,7 @@ from django.urls import reverse
 
 
 class Tournament(models.Model):
-    host = models.ForeignKey(User, on_delete=models.CASCADE, default='Unknown')
+    host = models.ForeignKey(User, on_delete=models.CASCADE, default='GevorgArtenyan')
     name = models.CharField(max_length=250, default='')
     player1 = models.CharField(max_length=250, default='')
     player2 = models.CharField(max_length=250, default='')
