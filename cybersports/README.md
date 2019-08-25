@@ -1,2 +1,1 @@
-This is the first attempt to create a Django project as a part of a Python and Django tutorial. As the name of the project( eSports Tournament) may imply, our aim is to create a generic website where users can register and take part in online tournaments. 
- 
+This is the first attempt to create a Django project. 
