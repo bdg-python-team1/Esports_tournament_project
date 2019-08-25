@@ -5,7 +5,7 @@ from django.urls import reverse
 
 
 class Tournament(models.Model):
-    host = models.ForeignKey(User, on_delete=models.CASCADE, default='GevorgArtenyan')
+    host = models.ForeignKey(User, on_delete=models.CASCADE, default='Unknown')
     name = models.CharField(max_length=250, default='')
     player1 = models.CharField(max_length=250, default='')
     player2 = models.CharField(max_length=250, default='')
@@ -17,7 +17,8 @@ class Tournament(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('tournament-detail', kwargs={'pk':self.pk})
+        return reverse('tournament-detail', kwargs={'pk': self.pk})
+
 
 class Result(models.Model):
     score1 = models.IntegerField(default=0)
