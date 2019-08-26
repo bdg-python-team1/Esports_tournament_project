@@ -3,16 +3,16 @@
 <h1>Welcome to the eSports Community</h1>
 <br>
 <br>
-    {% for tournament in tournaments %}
+    {% for match in matches %}
     <article class="media content-section">
-        <img class="rounded-circle article-img" src="{{ tournament.host.profile.image.url }}">
+        <img class="rounded-circle article-img" src="{{ match.host.profile.image.url }}">
       <div class="media-body">
         <div class="article-metadata">
-          <a class="mr-2" href="#">{{ tournament.host }}</a>
-          <small class="text-muted">{{ tournament.date_posted|date:"F d, Y" }}</small>
+          <a class="mr-2" href="#">{{ match.host }}</a>
+          <small class="text-muted">{{ match.date_posted|date:"F d, Y" }}</small>
         </div>
-        <h2><a class="article-title" href="{% url 'tournament-detail' tournament.id %}">{{ tournament.name }}</a></h2>
-        <p class="article-content">{{ tournament.player1 }} {{ tournament.score1 }}:{{ tournament.score2 }} {{ tournament.player2 }}</p>
+        <h2><a class="article-title" href="{% url 'match-detail' match.id %}">{{ match.name }}</a></h2>
+        <p class="article-content">{{ match.player1 }} {{ match.score1 }}:{{ match.score2 }} {{ match.player2 }}</p>
       </div>
     </article>
     {% endfor %}

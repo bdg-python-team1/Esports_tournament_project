@@ -1,29 +1,29 @@
 from django.shortcuts import render
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-from .models import Tournament, Result
+from .models import Match
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
 
 def home(request):
     context = {
-        'tournaments':Tournament.objects.all(),
+        'matches':Match.objects.all(),
     }
     return render(request, 'contest/home.html', context)
 
 
-class TournamentListView(ListView):
-    model = Tournament
+class MatchListView(ListView):
+    model = Match
     template_name = 'contest/home.html'
-    context_object_name = 'tournaments'
+    context_object_name = 'matches'
     ordering = ['-date_posted']
 
 
-class TournamentDetailView(DetailView):
-    model = Tournament
+class MatchDetailView(DetailView):
+    model = Match
 
 
-class TournamentCreateView(LoginRequiredMixin, CreateView):
-    model = Tournament
+class MatchCreateView(LoginRequiredMixin, CreateView):
+    model = Match
     fields = ['name', 'player1', 'player2', 'score1', 'score2']
 
     def form_valid(self, form):
@@ -31,8 +31,8 @@ class TournamentCreateView(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
 
-class TournamentUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
-    model = Tournament
+class MatchUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    model = Match
     fields = ['name', 'player1', 'player2', 'score1', 'score2']
 
     def form_valid(self, form):
@@ -40,19 +40,19 @@ class TournamentUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         return super().form_valid(form)
 
     def test_func(self):
-        tournament = self.get_object()
-        if self.request.user == tournament.host:
+        match = self.get_object()
+        if self.request.user == match.host:
             return True
         return False
 
 
-class TournamentDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
-    model = Tournament
+class MatchDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    model = Match
     success_url = '/'
 
     def test_func(self):
-        tournament = self.get_object()
-        if self.request.user == tournament.host:
+        match = self.get_object()
+        if self.request.user == match.host:
             return True
         return False
 

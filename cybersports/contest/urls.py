@@ -1,13 +1,13 @@
 from django.urls import path
 from . import views
-from .views import TournamentListView, TournamentDetailView, TournamentCreateView, TournamentUpdateView, TournamentDeleteView
+from .views import MatchListView, MatchUpdateView, MatchDeleteView, MatchDetailView, MatchCreateView
 
 urlpatterns = [
-    path('', TournamentListView.as_view(), name='home'),
+    path('', MatchListView.as_view(), name='home'),
     path('about/', views.about, name='about'),
-    path('tournament/<int:pk>/', TournamentDetailView.as_view(), name='tournament-detail'),
-    path('tournament/new/', TournamentCreateView.as_view(), name='tournament-create'),
-    path('tournament/<int:pk>/update', TournamentUpdateView.as_view(), name='tournament-update'),
-    path('tournament/<int:pk>/delete', TournamentDeleteView.as_view(), name='tournament-delete'),
+    path('match/<int:pk>/',MatchDetailView.as_view(), name='match-detail'),
+    path('match/new/', MatchCreateView.as_view(), name='match-create'),
+    path('match/<int:pk>/update', MatchUpdateView.as_view(), name='match-update'),
+    path('match/<int:pk>/delete', MatchDeleteView.as_view(), name='match-delete'),
 
 ]

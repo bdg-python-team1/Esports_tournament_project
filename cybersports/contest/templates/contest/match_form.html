@@ -5,13 +5,11 @@
         <form method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
-                <legend class="border-botton mb-4 ">Delete Tournament</legend>
-                <h2>Are you sure you want to delete the tournament '{{ object.name }}'?</h2>
+                <legend class="border-botton mb-4 ">Tournament</legend>
                 {{ form|crispy }}
             </fieldset>
             <div class="form-group">
-                <button class="btn btn-danger" type="submit">Yes, Delete</button>
-                <a class="btn btn-secondary" href="{% url 'tournament-detail' object.id %}">Cancel</a>
+                <button class="btn btn-outline-info" type="submit">Confirm</button>
             </div>
         </form>
     </div>

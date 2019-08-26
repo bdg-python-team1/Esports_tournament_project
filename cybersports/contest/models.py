@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 
 
-class Tournament(models.Model):
+class Match(models.Model):
     host = models.ForeignKey(User, on_delete=models.CASCADE, default='GevorgArtenyan')
     name = models.CharField(max_length=250, default='')
     player1 = models.CharField(max_length=250, default='')
@@ -17,9 +17,5 @@ class Tournament(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('tournament-detail', kwargs={'pk': self.pk})
+        return reverse('match-detail', kwargs={'pk': self.pk})
 
-
-class Result(models.Model):
-    score1 = models.IntegerField(default=0)
-    score2 = models.IntegerField(default=0)
