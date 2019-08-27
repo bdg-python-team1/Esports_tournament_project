@@ -1,34 +1,53 @@
 from django.shortcuts import render
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-from .models import Match
+from .models import Match, Tournament
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
 
 def home(request):
     context = {
-        'matches':Match.objects.all(),
+        'tournaments': Tournament.objects.all(),
     }
     return render(request, 'contest/home.html', context)
 
 
+class TournamentCreateView(LoginRequiredMixin, CreateView):
+    model = Tournament
+    fields = ['name']
+
+    def form_valid(self, form):
+        form.instance.host = self.request.user
+        return super().form_valid(form)
+
+
+class MatchCreateView(LoginRequiredMixin, CreateView):
+    model = Match
+    fields = ['player1', 'player2', 'score1', 'score2']
+
+    def form_valid(self, form):
+        form.instance.host = self.request.user
+        return super().form_valid(form)
+
+
+class TournamentListView(ListView):
+    model = Tournament
+    template_name = 'contest/home.html'
+    context_object_name = 'tournaments'
+    ordering = ['-date_posted']
+
+
 class MatchListView(ListView):
     model = Match
-    template_name = 'contest/home.html'
+    template_name = 'contest/match_list.html'
     context_object_name = 'matches'
-    ordering = ['-date_posted']
+
 
 
 class MatchDetailView(DetailView):
     model = Match
 
 
-class MatchCreateView(LoginRequiredMixin, CreateView):
-    model = Match
-    fields = ['name', 'player1', 'player2', 'score1', 'score2']
 
-    def form_valid(self, form):
-        form.instance.host = self.request.user
-        return super().form_valid(form)
 
 
 class MatchUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
