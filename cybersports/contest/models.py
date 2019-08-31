@@ -12,6 +12,9 @@ class Tournament(models.Model):
     def __str__(self):
         return self.name
 
+    def get_absolute_url(self):
+        return reverse('tournament-detail', kwargs={'pk': self.pk})
+
 
 class Match(models.Model):
     host = models.ForeignKey(User, on_delete=models.CASCADE, default='GevorgArtenyan')
@@ -21,6 +24,8 @@ class Match(models.Model):
     score1 = models.IntegerField(default=0)
     score2 = models.IntegerField(default=0)
 
+    class Meta:
+        verbose_name_plural = "Matches"
 
     def __str__(self):
         return f'{self.player1} {self.score1} : {self.score2} {self.player2}'
