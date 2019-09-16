@@ -4,11 +4,55 @@ from .models import Match, Tournament
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, TemplateView
 
 
-def home(request):
+def homie(request):
     context = {
         'tournaments': Tournament.objects.all(),
     }
     return render(request, 'contest/home.html', context)
+
+
+def home(request):
+    tournament_list = Tournament.objects.all()
+    context_dict = {}
+    context_dict['message'] = "All Tournaments"
+    context_dict['tournaments'] = tournament_list
+    return render(request, 'contest/home.html', context_dict)
+
+
+
+def tournament_detail(request, tournament_name_slug):
+    context_dict = {}
+    try:
+        tournament = Tournament.objects.get(slug=tournament_name_slug)
+        matches = Match.objects.filter(tournament=tournament)
+        context_dict['matches'] = matches
+        context_dict['tournament'] = tournament
+    except Tournament.DoesNotExist:
+        context_dict['tournament'] = None
+        context_dict['matches'] = None
+
+    return render(request, 'contest/tournament_detail.html', context_dict)
+
+
+
+class TournamentDetailView(TemplateView):
+    template_name = 'contest/tournament_detail.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(TournamentDetailView, self).get_context_data(**kwargs)
+        # TournamentDetailView.objects.filter()
+        context['matches'] = Match.objects.all()
+        context['tournaments'] = Tournament.objects.filter('name')
+        return context
+
+
+
+
+
+
+
+
+
 
 
 class MatchCreateView(LoginRequiredMixin, CreateView):
@@ -78,12 +122,4 @@ class TournamentListView(ListView):
     ordering = ['-date_posted']
 
 
-class TournamentDetailView(TemplateView):
-    template_name = 'contest/tournament_detail.html'
 
-    def get_context_data(self, **kwargs):
-        context = super(TournamentDetailView, self).get_context_data(**kwargs)
-        # TournamentDetailView.objects.filter()
-        context['matches'] = Match.objects.all()
-        context['tournaments'] = Tournament.objects.filter('name')
-        return context
