@@ -1,16 +1,30 @@
 {% extends 'contest/base.html' %}
-{% load crispy_forms_tags %}
 {% block content %}
-    <div class="content-section">
-        <form method="POST">
-            {% csrf_token %}
-            <fieldset class="form-group">
-                <legend class="border-botton mb-4 ">Tournament</legend>
-                {{ form|crispy }}
-            </fieldset>
-            <div class="form-group">
-                <button class="btn btn-outline-info" type="submit">Confirm</button>
-            </div>
+{% load static %}
+
+<html>
+    <head>
+        <title>Online Tournaments</title>
+    </head>
+
+    <body>
+        <h1>Add match</h1><br/>
+                <form role="form" id="match_form" method="post" action="{% url 'match-create' tournament.slug %}">
+
+                    {% csrf_token %}
+                    {% for hidden in form.hidden_fields %}
+                        {{ hidden }}
+                    {% endfor %}
+                    {% for field in form.visible_fields %}
+                        {{ field.errors }}
+                        {{ field.help_text }}<br />
+                        {{ field }}<br />
+
+                    {% endfor %}
+                    <br />
+            <input type="submit" name="submit" value="Create Match" />
         </form>
-    </div>
+    </body>
+</html>
+
 {% endblock content %}

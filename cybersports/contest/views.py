@@ -1,7 +1,9 @@
 from django.shortcuts import render
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import Match, Tournament
+from .forms import MatchForm
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, TemplateView
+from django.contrib.auth.decorators import login_required
 
 
 def home(request):
@@ -12,6 +14,7 @@ def home(request):
     return render(request, 'contest/home.html', context_dict)
 
 
+@login_required
 def tournament_detail(request, tournament_name_slug):
     context_dict = {}
     try:
@@ -52,16 +55,41 @@ class TournamentListView(ListView):
 #         # TournamentDetailView.objects.filter()
 #         context['matches'] = Match.objects.all()
 #         context['tournaments'] = Tournament.objects.filter('name')
+
 #         return context
 
+def match_create(request, tournament_name_slug):
+    try:
+        tournament = Tournament.objects.get(slug=tournament_name_slug)
+    except Tournament.DoesNotExist:
+        tournament = None
 
-class MatchCreateView(LoginRequiredMixin, CreateView):
-    model = Match
-    fields = ['player1', 'player2', 'score1', 'score2']
+    form = MatchForm()
 
-    def form_valid(self, form):
-        form.instance.host = self.request.user
-        return super().form_valid(form)
+    if request.method == 'POST':
+        form = MatchForm(request.POST)
+
+        if form.is_valid():
+            if tournament:
+                match = form.save(commit=False)
+                match.tournament = tournament
+                match.save()
+
+                return tournament_detail(request, tournament_name_slug)
+        else:
+            print(form.errors)
+
+    context_dict = {'form': form, 'tournament': tournament}
+    return render(request, 'contest/match_form.html', context_dict)
+
+#     class MatchCreateView(LoginRequiredMixin, CreateView):
+#         model = Match
+#         fields = ['player1', 'player2', 'score1', 'score2']
+#
+#
+#         def form_valid(self, form):
+#             form.instance.host = self.request.user
+#             return super().form_valid(form)
 
 
 class MatchListView(ListView):

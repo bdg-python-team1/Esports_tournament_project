@@ -2,6 +2,7 @@ from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
 from django.urls import reverse
+from django.shortcuts import redirect
 from django.template.defaultfilters import slugify
 from django.http import HttpResponseRedirect
 import uuid
@@ -45,5 +46,5 @@ class Match(models.Model):
     def __str__(self):
         return f'{self.player1} {self.score1} : {self.score2} {self.player2}'
 
-    def get_absolute_url(self):
-        return reverse('tournament-detail', kwargs={'pk': self.pk})
+
+

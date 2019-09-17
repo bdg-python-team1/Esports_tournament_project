@@ -6,13 +6,13 @@ from .views import (TournamentListView,
                     MatchUpdateView,
                     MatchDeleteView,
                     MatchDetailView,
-                    MatchCreateView)
+                    )
 
 urlpatterns = [
     path('', views.home, name='home'),
     path('tournament/<slug:tournament_name_slug>/', views.tournament_detail, name='tournament-detail'),
     path('new-tournament/', TournamentCreateView.as_view(), name='tournament-create'),
-    path('tournament/<slug:tournament_name_slug>/create-match/', MatchCreateView.as_view(), name='match-create'),
+    path('tournament/<slug:tournament_name_slug>/match-create/', views.match_create, name='match-create'),
     path('about/', views.about, name='about'),
     path('tournament/<slug:tournament_name_slug>/match/<int:pk>/', MatchDetailView.as_view(), name='match-detail'),
 
