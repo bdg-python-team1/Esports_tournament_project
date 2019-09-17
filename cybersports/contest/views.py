@@ -4,20 +4,12 @@ from .models import Match, Tournament
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, TemplateView
 
 
-def homie(request):
-    context = {
-        'tournaments': Tournament.objects.all(),
-    }
-    return render(request, 'contest/home.html', context)
-
-
 def home(request):
     tournament_list = Tournament.objects.all()
     context_dict = {}
     context_dict['message'] = "All Tournaments"
     context_dict['tournaments'] = tournament_list
     return render(request, 'contest/home.html', context_dict)
-
 
 
 def tournament_detail(request, tournament_name_slug):
@@ -34,25 +26,33 @@ def tournament_detail(request, tournament_name_slug):
     return render(request, 'contest/tournament_detail.html', context_dict)
 
 
+class TournamentCreateView(LoginRequiredMixin, CreateView):
+    model = Tournament
+    fields = ['name', 'player1', 'player2', 'player3', 'player4', 'player5', 'player6', 'player7', 'player8']
 
-class TournamentDetailView(TemplateView):
-    template_name = 'contest/tournament_detail.html'
-
-    def get_context_data(self, **kwargs):
-        context = super(TournamentDetailView, self).get_context_data(**kwargs)
-        # TournamentDetailView.objects.filter()
-        context['matches'] = Match.objects.all()
-        context['tournaments'] = Tournament.objects.filter('name')
-        return context
+    def form_valid(self, form):
+        form.instance.host = self.request.user
+        return super().form_valid(form)
 
 
-
-
-
-
+class TournamentListView(ListView):
+    model = Tournament
+    template_name = 'contest/home.html'
+    context_object_name = 'tournaments'
+    ordering = ['-date_posted']
 
 
 
+
+# class TournamentDetailView(TemplateView):
+#     template_name = 'contest/tournament_detail.html'
+#
+#     def get_context_data(self, **kwargs):
+#         context = super(TournamentDetailView, self).get_context_data(**kwargs)
+#         # TournamentDetailView.objects.filter()
+#         context['matches'] = Match.objects.all()
+#         context['tournaments'] = Tournament.objects.filter('name')
+#         return context
 
 
 class MatchCreateView(LoginRequiredMixin, CreateView):
@@ -103,23 +103,10 @@ class MatchDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 def about(request):
     return render(request, 'contest/about.html')
 
-# TOURNAMENT
 
 
-class TournamentCreateView(LoginRequiredMixin, CreateView):
-    model = Tournament
-    fields = ['name']
-
-    def form_valid(self, form):
-        form.instance.host = self.request.user
-        return super().form_valid(form)
 
 
-class TournamentListView(ListView):
-    model = Tournament
-    template_name = 'contest/home.html'
-    context_object_name = 'tournaments'
-    ordering = ['-date_posted']
 
 
 

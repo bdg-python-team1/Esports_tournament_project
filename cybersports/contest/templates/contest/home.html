@@ -11,7 +11,7 @@
           <a class="mr-2" href="#">{{ tournament.host }}</a>
           <small class="text-muted">{{ tournament.date_posted|date:"F d, Y" }}</small>
         </div>
-        <h2><a class="article-title" href="{% url 'tournament-detail' tournament.id %}">{{ tournament.name }}</a></h2>
+        <h2><a class="article-title" href="{% url 'tournament-detail' tournament.slug %}">{{ tournament.name }}</a></h2>
         <p class="article-content"></p>
       </div>
     </article>

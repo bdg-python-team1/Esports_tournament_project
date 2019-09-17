@@ -1,19 +1,38 @@
 {% extends 'contest/base.html' %}
 {% block content %}
-<h1>Tournament Template</h1>
-    {% for tournament in tournaments %}
-        {% for match in matches %}
-    <article class="media content-section">
-        <img class="rounded-circle article-img" src="{{ tournament.host.profile.image.url }}">
-      <div class="media-body">
-        <div class="article-metadata">
-          <a class="mr-2" href="#">{{ tournament.host }}</a>
-          <small class="text-muted">{{ tournament.date_posted|date:"F d, Y" }}</small>
-        </div>
-        <h2><a class="article-title" href="{% url 'tournament-detail' match.id %}">{{ match.player1 }} {{ match.score1 }} : {{ match.score2 }} {{ match.player2 }}</a></h2>
-        <p class="article-content"></p>
-      </div>
-    </article>
-        {% endfor %}
-    {% endfor %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tournament Detail</title>
+</head>
+<body>
+    <div>
+        <h1>{{ message }}</h1>
+        {% if tournament %}
+            {% for tournament in tournaments %}
+            <a href="{% url 'tournament-detail' tournament.slug %}"><h2>{{ tournament.name }}</h2></a>
+             {% endfor %}
+            <h1>{{ tournament.name }}</h1>
+        {% if matches %}
+            <ul>
+                {% for match in matches %}
+                <li><a href="{{ match.url }}">{{ match.player1 }} {{ match.score1 }} : {{ match.score2 }} {{ match.player2 }}</a></li>
+                {% endfor %}
+            </ul><br/>
+            <strong>Would you like to add more </strong>
+            <a href="{% url 'match-create' tournament.slug %}">matches</a>
+            <strong>?</strong>
+
+            {% else %}
+                <strong>No matches currently in tournament. Would you like to </strong>
+                <a href="{% url 'match-create' tournament.slug %}">make one</a>
+                <strong>?</strong>
+            {% endif %}
+        {% else %} <!-- If contest is not defined an error message tells us so! -->
+            The specified contest {{ tournament_name }} does not exist!
+        {% endif %}
+    </div>
+</body>
+</html>
 {% endblock content %}
+
